@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR Animation</title>
+    <style>
+        .road-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 500%;
+    display: block;
+    height: 200px;
+    background: url('./assets/road.jpg');
+    background-repeat: repeat-x;
+    animation: car-image 5s linear infinite;
+}
+
+@keyframes car-image {
+    100%{
+        transform: translateX(-3600px);
+    }
+}
+
+.city-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    z-index: 1;
+    width: 500%;
+    display: block;
+    height: 250px;
+    background: url('./assets/city.png');
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car-image{
+    width: 400px;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car-image img{
+    width: 100%;
+
+}
+.wheel-image{
+    position: absolute;
+    left: 50%;
+    bottom: 178px;
+    z-index: 2;
+}
+.wheel-image img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.front-wheel{
+    position: absolute;
+    left: 80px;
+}
+.back-wheel{
+    position: absolute;
+    left: -151px;
+}
+.flag-image{
+    position: absolute;
+    bottom: 174px;
+    left: 56%;
+    width: 110px;
+    z-index: 2;
+}
+.flag-image img{
+    width: 100%;
+}
+.sun-image{
+    position: absolute;
+   right:26px;
+   top: 41px;
+    width: 80px;
+    z-index: 2;
+
+}
+.sun-image img{
+    width:100%;
+    animation: sun 20s linear infinite;
+}
+@keyframes sun {
+0%{
+transform: translateX(0px);
+}   
+50%{
+    transform: translateX(-300px);
+
+} 
+100%{
+    transform: translateX(-200px);
+
+}
+}
+#sky{
+    background-image: url('./assets/sky.jpg');
+}
+#span-1{
+    font-weight: bold;
+    font-size: 2em;
+    background-color: rgba(255, 81, 0, 0.858);
+}
+#span-2{
+    font-weight: bold;
+    font-size: 2em;
+    background-color:white;
+}
+#span-3{
+    font-weight: bold;
+    font-size: 2em;
+    background-color: green;
+}
+
+    </style>
+</head>
+<body id="sky">
+    <div id="animation-body">
+        <center>
+        
+            <div>
+                <span id="span-1">HAPPY</span>
+                <span id="span-2">INDEPENDENCE</span>
+                <span id="span-3">DAY</span>
+            </div>
+        </center>
+
+        <div class="road-image" ></div>
+        <div class="city-image" ></div>
+        <div class="car-image">
+            <img src="./assets/Discovery.png" alt="Error!">
+        </div>
+        <div class="wheel-image">
+            <img src="./assets/wheel.png" class="front-wheel" alt="Error!">
+            <img src="./assets/wheel.png" class="back-wheel" alt="Error!">
+
+        </div>
+        <div class="flag-image">
+            <img src="./assets/flag-removebg-preview.png" alt="Error!">
+        </div>
+        <div class="sun-image">
+            <img src="./assets/sun-9623.png" alt="Error!">
+        </div>
+
+
+
+    
+    </div>
+</body>
+
+</html>
+
+
+    
+</body>
+</html>
